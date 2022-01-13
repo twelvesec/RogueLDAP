@@ -1,3 +1,3 @@
 # RogueLDAP
 
-This is a lightweight Rogue LDAP server based on the JNDIExploit-1 written from fihong. 
+This is a lightweight Rogue LDAP server which is a modification of the JNDIExploit-1 written from feihong. 
