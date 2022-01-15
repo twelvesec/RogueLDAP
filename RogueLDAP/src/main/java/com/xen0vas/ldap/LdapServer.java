@@ -61,7 +61,6 @@ public class LdapServer extends InMemoryOperationInterceptor {
         }
     }
 
-/*
     public void processSearchResult(InMemoryInterceptedSearchResult result) {
         String base = result.getRequest().getBaseDN();
         LdapController controller = null;
@@ -83,5 +82,4 @@ public class LdapServer extends InMemoryOperationInterceptor {
             System.out.println("[!] Exception: " + e1.getMessage());
         }
     }
-    */
 }
