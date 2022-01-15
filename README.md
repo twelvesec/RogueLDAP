@@ -37,7 +37,7 @@ docker run -p 8080:8080 logging-log4j2-vuln
 The setup should be as follows 
 
 1. run the ```RogueLDAP``` server 
-2. run the vulnerable ```logging-log4j2``` application 
+2. run the vulnerable ```logging-log4j2``` application at the target machine
 3. create a folder called shells at a preffered location
 
 ```
