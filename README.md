@@ -32,7 +32,7 @@ docker build -f Dockerfile -t logging-log4j2-vuln .
 docker run -p 8080:8080 logging-log4j2-vuln 
 ```
 
-## Setup the Environment
+## Setting up the Environment
 
 The setup should be as follows 
 
