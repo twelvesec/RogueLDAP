@@ -36,8 +36,8 @@ docker run -p 8080:8080 logging-log4j2-vuln
 
 The setup should be as follows 
 
-1. run the ```RogueLDAP``` server at the attacking machine
-2. run the vulnerable ```logging-log4j2``` application at the target machine
+1. Open a new terminal window and run the ```RogueLDAP``` server at the attacking machine
+2. Open a new terminal window and run the vulnerable ```logging-log4j2``` application at the target machine
 3. create a folder called shells at a preffered location at the attacking machine
 
 ```
