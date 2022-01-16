@@ -38,6 +38,7 @@ docker build -f Dockerfile -t logging-log4j2-vuln .
 ### Build with Maven
 
 ```
+cd RogueLDAP/logging-log4j2
 mvn clean package  
 ```
 
