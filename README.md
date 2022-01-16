@@ -6,7 +6,7 @@ This is a lightweight ```RogueLDAP``` server which is a modified version of the 
 
 #### Build with Maven
 
-In order to build and run the ```RogueLDAP``` server we will run the following commands 
+In order to build and run the ```RogueLDAP``` server run the following commands 
 
 ```
 cd RogueLDAP
@@ -19,7 +19,7 @@ java -jar RogueLDAP-1.4-SNAPSHOT.jar
 
 ------------
 
-The ```logging-log4j2``` is a vulnerable dummy web service which only logs a user supplied string value. This application created for testing purposes in order to test the Log4Shell vulnerability using the ```RogueLDAP``` server previously described.  
+The ```logging-log4j2``` is a vulnerable dummy web service which only logs a user supplied string value. This application created for testing purposes in order to test the Log4Shell vulnerability using the ```RogueLDAP``` server.  
 
 #### Build and run with Docker
 
