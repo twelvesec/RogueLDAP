@@ -42,7 +42,7 @@ cd RogueLDAP/logging-log4j2
 mvn clean package  
 ```
 
-## Setting up the Environment and run the exploit
+## Setting up the Environment and run the Exploit
 
 In order to setup the environment and run the exploit the following steps should be followed 
 
