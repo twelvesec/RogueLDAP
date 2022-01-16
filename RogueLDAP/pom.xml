@@ -53,7 +53,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.feihong.ldap.Starter</mainClass>
+                            <mainClass>com.xen0vas.ldap.Starter</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -78,10 +78,6 @@
         <!--    <spring.version>3.0.5.RELEASE</spring.version>-->
         <spring.version>5.2.3.RELEASE</spring.version>
         <custom.lib-path>${project.basedir}/lib</custom.lib-path>
-        <!--    <spring.version>4.0.5.RELEASE</spring.version>-->
-        <!--    <spring.version>4.3.28.RELEASE</spring.version>-->
-        <!--    <spring.version>5.0.8.RELEASE</spring.version>-->
-        <!--    <spring.version>5.2.10.RELEASE</spring.version>-->
     </properties>
 
     <dependencies>
@@ -111,12 +107,6 @@
             <artifactId>spring-tx</artifactId>
             <version>${spring.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.python</groupId>-->
-<!--            <artifactId>jython-standalone</artifactId>-->
-<!--            <version>2.7.0</version>-->
-<!--        </dependency>-->
-<!-- https://mvnrepository.com/artifact/com.sun.jndi/rmiregistry -->
 		<dependency>
 		    <groupId>com.sun.jndi</groupId>
 		    <artifactId>rmiregistry</artifactId>
@@ -250,10 +240,5 @@
             <artifactId>commons-text</artifactId>
             <version>1.8</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>coherence</groupId>-->
-<!--            <artifactId>coherence</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
     </dependencies>
 </project>
