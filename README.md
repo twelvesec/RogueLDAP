@@ -15,7 +15,7 @@ git clone https://github.com/twelvesec/RogueLDAP.git
 In order to build the ```RogueLDAP``` server run the following commands 
 
 ```
-cd RogueLDAP
+cd RogueLDAP/RogueLDAP
 mvn clean package
 ```
 
@@ -30,7 +30,7 @@ The ```logging-log4j2``` is a vulnerable dummy web service which only logs a use
 From cli run the following command to build the ```logging-log4j2``` application 
 
 ```
-cd logging-log4j2
+cd RogueLDAP/logging-log4j2
 mvn clean install
 docker build -f Dockerfile -t logging-log4j2-vuln .
 ```
