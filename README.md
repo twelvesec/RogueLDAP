@@ -29,7 +29,7 @@ mvn clean install
 docker build -f Dockerfile -t logging-log4j2-vuln .
 ```
 
-#### Build with Maven
+### Build with Maven
 
 ```
 mvn clean package && java -Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar logging-log4j2-1.0.jar 
