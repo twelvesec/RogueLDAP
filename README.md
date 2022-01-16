@@ -6,7 +6,7 @@ This is a lightweight ```RogueLDAP``` server which is a modified version of the 
 
 #### Build with Maven
 
-In order to build the ```RogueLDAP``` server we will run the following commands 
+In order to build and run the ```RogueLDAP``` server we will run the following commands 
 
 ```
 cd RogueLDAP
