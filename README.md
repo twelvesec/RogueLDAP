@@ -59,7 +59,6 @@ java -jar RogueLDAP-1.4-SNAPSHOT.jar -i <YOUR-IP-ADDRESS>
 ### Run with Docker 
 
 ```
-cd RogueLDAP/RogueLDAP
 docker run -p 8080:8080 logging-log4j2-vuln
 ```
 
