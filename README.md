@@ -4,7 +4,7 @@
 
 This is a lightweight ```RogueLDAP``` server which is a modified version of the  [JNDIExploit-1](https://github.com/gysf666/JNDIExploit-1). Before running the Rogue LDAP Server, we should build and run the vulnerable ```loggin-log4j2``` application
 
-#### Build and run with Maven
+#### Build with Maven
 
 In order to build the ```RogueLDAP``` server we will run the following commands 
 
@@ -32,7 +32,7 @@ docker build -f Dockerfile -t logging-log4j2-vuln .
 docker run -p 8080:8080 logging-log4j2-vuln 
 ```
 
-#### Build and run with Maven
+#### Build with Maven
 
 ```
 mvn clean package && java -Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar logging-log4j2-1.0.jar 
