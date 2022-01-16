@@ -50,7 +50,6 @@ In order to setup the environment and run the exploit the following steps should
 
 ```
 cd RogueLDAP/RogueLDAP/target
-
 java -jar RogueLDAP-1.4-SNAPSHOT.jar -i <YOUR-IP-ADDRESS>
 ```
 
@@ -61,7 +60,6 @@ java -jar RogueLDAP-1.4-SNAPSHOT.jar -i <YOUR-IP-ADDRESS>
 
 ```
 cd RogueLDAP/RogueLDAP
-
 docker run -p 8080:8080 logging-log4j2-vuln
 ```
 
@@ -69,7 +67,6 @@ docker run -p 8080:8080 logging-log4j2-vuln
 
 ```
 cd RogueLDAP/RogueLDAP/target
-
 java -Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar logging-log4j2-1.0.jar
 
 ```
