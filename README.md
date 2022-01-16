@@ -44,6 +44,10 @@ mvn clean package
 
 ## Setting up the Environment and run the Exploit
 
+--------
+
+### Setup Instructions 
+
 In order to setup the environment and run the exploit the following steps should be followed 
 
 1. Open a new terminal window and run the ```RogueLDAP``` server at the attacking machine
