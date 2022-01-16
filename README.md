@@ -56,14 +56,14 @@ java -jar RogueLDAP-1.4-SNAPSHOT.jar -i <YOUR-IP-ADDRESS>
 2. Open a new terminal window and run the vulnerable ```logging-log4j2``` application at the target machine
 
 
-#### Run with Docker 
+### Run with Docker 
 
 ```
 cd RogueLDAP/RogueLDAP
 docker run -p 8080:8080 logging-log4j2-vuln
 ```
 
-#### Run with Java 
+### Run with Java 
 
 ```
 cd RogueLDAP/RogueLDAP/target
