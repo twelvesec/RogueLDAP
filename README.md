@@ -4,6 +4,12 @@
 
 This is a lightweight ```RogueLDAP``` server which is a modified version of the  [JNDIExploit-1](https://github.com/gysf666/JNDIExploit-1). Before running the Rogue LDAP Server, we should build and run the vulnerable ```loggin-log4j2``` application
 
+### clone the repo 
+
+```
+git clone https://github.com/twelvesec/RogueLDAP.git
+```
+
 ### Build with Maven
 
 In order to build the ```RogueLDAP``` server run the following commands 
