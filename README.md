@@ -6,13 +6,11 @@ This is a lightweight ```RogueLDAP``` server which is a modified version of the 
 
 #### Build with Maven
 
-In order to build and run the ```RogueLDAP``` server run the following commands 
+In order to build the ```RogueLDAP``` server run the following commands 
 
 ```
 cd RogueLDAP
 mvn clean package
-cd target
-java -jar RogueLDAP-1.4-SNAPSHOT.jar
 ```
 
 ## logging-log4j2
@@ -23,13 +21,12 @@ The ```logging-log4j2``` is a vulnerable dummy web service which only logs a use
 
 #### Build and run with Docker
 
-From cli run the following command to build and run the ```logging-log4j2``` application 
+From cli run the following command to build the ```logging-log4j2``` application 
 
 ```
 cd logging-log4j2
 mvn clean install
 docker build -f Dockerfile -t logging-log4j2-vuln .
-docker run -p 8080:8080 logging-log4j2-vuln 
 ```
 
 #### Build with Maven
@@ -45,7 +42,8 @@ In order to setup the environment and run the exploit the following steps should
 1. Open a new terminal window and run the ```RogueLDAP``` server at the attacking machine
 
 ```
-java -jar RogueLDAP-1.4-SNAPSHOT.jar
+cd target
+java -jar RogueLDAP-1.4-SNAPSHOT.jar -i <YOUR-IP-ADDRESS>
 ```
 
 2. Open a new terminal window and run the vulnerable ```logging-log4j2``` application at the target machine
