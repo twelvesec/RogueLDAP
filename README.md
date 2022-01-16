@@ -32,6 +32,12 @@ docker build -f Dockerfile -t logging-log4j2-vuln .
 docker run -p 8080:8080 logging-log4j2-vuln 
 ```
 
+### Build and run with Maven
+
+```
+mvn clean package && java -Dlog4j2.contextSelector=org.apache.logging.log4j.core.async.AsyncLoggerContextSelector -jar logging-log4j2-1.0.jar 
+```
+
 ## Setting up the Environment
 
 The setup should be as follows 
