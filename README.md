@@ -1,5 +1,6 @@
 ## RogueLDAP
 
+##### @xen0vas (xvas)
 ------------
 
 This is a lightweight ```RogueLDAP``` server which is a modified version of the  [JNDIExploit-1](https://github.com/gysf666/JNDIExploit-1).
