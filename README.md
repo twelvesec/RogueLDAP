@@ -25,9 +25,9 @@ mvn clean package
 
 The ```logging-log4j2``` is a vulnerable dummy web service which only logs a user supplied string value. This application created for testing purposes in order to test the ```Log4Shell``` vulnerability using the ```RogueLDAP``` server.  
 
-### Build with Docker
+From cli run the following commands to build the ```logging-log4j2``` application 
 
-From cli run the following command to build the ```logging-log4j2``` application 
+### Build with Docker
 
 ```
 cd RogueLDAP/logging-log4j2
